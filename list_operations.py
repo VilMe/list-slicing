@@ -90,7 +90,7 @@ def middle(input_list):
 
     """
 
-    return []
+    return input_list[2:-2]
 
 
 def inner_four(input_list):
@@ -102,8 +102,12 @@ def inner_four(input_list):
     [6, 9, 12, 15]
 
     """
+    midpoint = len(input_list)/2
 
-    return []
+    print(input_list[(midpoint - 3):(midpoint + 1)])
+
+
+    return input_list[(midpoint - 3):(midpoint + 1)]
 
 
 def inner_four_end(input_list):
