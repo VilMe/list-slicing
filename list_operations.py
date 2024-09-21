@@ -143,6 +143,8 @@ def replace_head(input_list):
     input_list[0] = 42
     print(input_list)
 
+    return
+
 
 def replace_third_and_last(input_list):
     """Replace third and last elements of input_list with 37 and return nothing.
@@ -158,8 +160,10 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
 
+    return
 
 def backwards(input_list):
     """Return the input list in reverse order. 
