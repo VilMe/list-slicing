@@ -104,7 +104,7 @@ def inner_four(input_list):
     """
     midpoint = len(input_list)/2
 
-    print(input_list[(midpoint - 3):(midpoint + 1)])
+    # print(input_list[(midpoint - 3):(midpoint + 1)])
 
 
     return input_list[(midpoint - 3):(midpoint + 1)]
@@ -140,7 +140,8 @@ def replace_head(input_list):
 
     """
 
-    pass
+    input_list[0] = 42
+    print(input_list)
 
 
 def replace_third_and_last(input_list):
