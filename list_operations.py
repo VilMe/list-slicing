@@ -179,14 +179,14 @@ def backwards(input_list):
 
     index_to_test = -1
     backwards_list = []
+    last_index_from_end = -len(input_list) 
 
-    while index_to_test < 0:
-        try:
-            value = input_list(index_to_test)
-            backwards_list.append(value)
-            index_to_test -= 1
-        except IndexError:
-            return backwards_list
+    while index_to_test >= last_index_from_end:
+        value = input_list[index_to_test]
+        backwards_list.append(value)
+        index_to_test -=1
+    else:
+        return backwards_list
 
 
 def every_other(input_list):
