@@ -198,8 +198,16 @@ def every_other(input_list):
     ['Jan', 'Mar', 'May']
 
     """
+    index = 0
+    list_every_other = []
 
-    pass
+    while index < len(input_list):
+        if index % 2 == 0:
+            list_every_other.append(input_list[index])
+        index += 1
+    else: 
+        return list_every_other
+
 
 
 def delete_third_and_seventh(input_list):
