@@ -141,7 +141,7 @@ def replace_head(input_list):
     """
 
     input_list[0] = 42
-    print(input_list)
+    # print(input_list)
 
     return
 
@@ -245,8 +245,15 @@ def indices_of_positive_numbers(input_list):
     [0, 2, 3, 6]
 
     """
+    positives_list = []
+    index = 0
 
-    pass
+    while index < len(input_list):
+        if input_list[index] > 0:
+            positives_list.append(index)
+        index += 1
+    else: 
+        return positives_list
 
 
 def sum_repeats(input_list):
