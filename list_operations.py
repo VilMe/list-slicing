@@ -224,7 +224,14 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
+    del input_list[2]
+    try:
+       del input_list[5]
+       print(input_list)
+    except IndexError:
+        print(input_list)
+        return input_list
+    return input_list
 
 
 ### List Iteration Problems. Built-in methods are allowed for these! ###
