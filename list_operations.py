@@ -268,5 +268,15 @@ def sum_repeats(input_list):
     7
 
     """
+    sum_of_repeat = 0
+    index = 0
 
-    pass
+    while index < len(input_list):
+        try:
+            if input_list[index] == input_list[index + 1]:
+                sum_of_repeat += input_list[index]
+            index += 1
+        except IndexError:
+            return sum_of_repeat
+    else: 
+        return sum_of_repeat
